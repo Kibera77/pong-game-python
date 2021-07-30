@@ -7,7 +7,6 @@ GUI BASED
 import turtle
 from tkinter import messagebox
 
-
 win = turtle.Screen()
 win.title('Pong game @ by Dan')
 win.bgcolor('black')
@@ -118,18 +117,6 @@ while True:
         score_a += 1
         pen.clear()
 
-        if score_a == 5:
-            messagebox.showinfo('Birthday!', 'Happy 20th Birthday Ann,'
-                                             'Today is the day you celebrate the day that you were brought to this world'
-                                             'As you celebrate, i thank God that He has seen you yet through another'
-                                             'year...'
-                                             'Babee, I wish you all the best in the coming year, enjoy'
-                                             'to the fullest, have peace, make memories and always stay healthy'
-                                             ''
-                                             'I wish you all the happiness dear'
-                                             ''
-                                             '           Yours:  Dan')
-            continue
         pen.write('Player A: {}  Player B: {}'.format(score_a, score_b), align='center', font=('Courier', 24, 'normal'))
 
     if ball.xcor() < -390:
